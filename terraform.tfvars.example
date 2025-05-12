@@ -1,0 +1,20 @@
+# AWS region where resources will be deployed
+region = "eu-west-2"
+
+# CIDR block for the VPC — override to avoid IP conflicts
+vpc_cidr = "10.0.0.0/16"
+
+# Number of private subnets to create in different AZs
+subnet_count = 3
+
+# List of availability zones to spread subnets across
+availability_zones = ["eu-west-2a", "eu-west-2b", "eu-west-2c"]
+
+# Lambda function name
+lambda_function_name = "object_storage_lambda"
+
+# Unique S3 bucket name (must be globally unique in AWS)
+bucket_name = "data-bucket-yourname"
+
+# Deployment environment for tagging resources (e.g., dev, test, prod)
+environment = "dev"
